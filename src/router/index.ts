@@ -1,8 +1,8 @@
-import { createRouter, createWebHistory } from 'vue-router'
+import { createRouter, createWebHashHistory } from 'vue-router'
 import InputDemoPage from '../views/InputDemoPage.vue'
 
 const router = createRouter({
-  history: createWebHistory('/vue-ui-components/'),
+  history: createWebHashHistory(),
   routes: [
     {
       path: '/AppInput',
