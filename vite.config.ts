@@ -8,6 +8,7 @@ export default defineConfig({
   plugins: [
     vue(),
   ],
+  base: "/vue-ui-components/",
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
