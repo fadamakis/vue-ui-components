@@ -1,0 +1,5 @@
+// 4 Pixel Grid
+// https://webflow.com/blog/why-were-using-a-4-point-grid-in-webflow
+@function spacing($factor: 1) {
+  @return $factor * 4px;
+}

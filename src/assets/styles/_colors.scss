@@ -1,0 +1,16 @@
+$color-primary: #33a1f2;
+$color-primary-hover: darken($color-primary, 10%);
+$color-secondary: #6b7280;
+$color-secondary-hover: darken($color-secondary, 10%);
+$color-success: #10b981;
+$color-success-hover:   darken($color-success, 10%);
+$color-danger: #ef4444;
+$color-danger-hover: darken($color-danger, 10%);
+$color-light: #f5f8fa;
+$color-light-hover: darken($color-light, 5%);
+$color-dark: #1f2937;
+$color-dark-hover: lighten($color-dark, 10%);
+$color-gray: #8899a6;
+$color-white: #ffffff;
+$color-border: #0f14191a;
+$color-backdrop: rgba(0, 0, 0, 0.5);
