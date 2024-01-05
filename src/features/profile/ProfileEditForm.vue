@@ -12,15 +12,16 @@ const userInfo = reactive({
   website: "fadamakis.com",
 });
 
+const emit = defineEmits(['submitted'])
+
 function submitForm() {
   alert('Info submitted: ' + JSON.stringify(userInfo))
+
+  emit('submitted')
 }
 </script>
 
 <template>
-  <main>
-    <h1>Base Input Demo</h1>
-
     <AppInput v-model="userInfo.name" placeholder="Name">
       <template #label> Name </template>
     </AppInput>
@@ -45,33 +46,4 @@ function submitForm() {
     <AppButton @click="submitForm">
       Submit <AppIcon size="2x" icon="arrow-right-circle" />
     </AppButton>
-
-    <hr />
-
-    <AppInput pill name="search" placeholder="Search">
-      <template #prefix>
-        <AppIcon icon="search" />
-      </template>
-    </AppInput>
-
-    <AppInput placeholder="Send message...">
-      <template #suffix>
-        <AppIcon size="2x" icon="arrow-right-circle" />
-      </template>
-    </AppInput>
-  </main>
 </template>
-
-<style scoped lang="scss">
-main {
-  max-width: 720px;
-  margin: 0 auto;
-  margin-top: 20px;
-  text-align: center;
-  padding: 10px;
-}
-
-hr {
-  margin: 20px auto;
-}
-</style>

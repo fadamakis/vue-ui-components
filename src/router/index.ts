@@ -1,5 +1,6 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
-import InputDemoPage from '../views/InputDemoPage.vue'
+import InputDemoPage from '@/views/InputDemoPage.vue'
+import ModalDemoPage from '@/views/ModalDemoPage.vue'
 
 const router = createRouter({
   history: createWebHashHistory(),
@@ -8,6 +9,11 @@ const router = createRouter({
       path: '/AppInput',
       name: 'AppInput',
       component: InputDemoPage
+    },
+    {
+      path: '/AppModal',
+      name: 'AppModal',
+      component: ModalDemoPage
     },
   ]
 })
